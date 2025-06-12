@@ -1,0 +1,214 @@
+/* cta */
+#cta {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  margin: 35px 0px;
+}
+
+#cta .inner {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 40px;
+  background: linear-gradient(45deg, #c5f0ff, transparent);
+  padding-right: 290px;
+}
+
+#cta .inner .hero_text {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #292622;
+  z-index: 1;
+}
+
+#cta .inner .abs_pos {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+#cta .inner .arrow {
+  position: absolute;
+  top: -9px;
+  right: calc(100% + 25px);
+  width: 150px;
+  height: 70px;
+}
+#cta .inner .arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background: #1293d3;
+  height: 30px;
+  transform: translateY(-50%);
+}
+#cta .inner .arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  transform: translateY(-50%) rotate(-45deg);
+  border: 25px solid #1293d3;
+  border-top: 0;
+  border-left: 0;
+}
+
+#cta .inner .button_wrapper {
+  position: relative;
+  display: block;
+  width: 150px;
+  z-index: 9;
+}
+
+#cta .inner .button_wrapper .button {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  background: #176f9b;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  border: 2px solid #2daee1;
+}
+/* cta */
+
+/* routes */
+
+#routes {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 50px 0;
+}
+
+#routes .wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+#routes .wrapper .item {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #dbefff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 1px 4px 10px -4px #0000005e;
+  min-height: 155px;
+}
+
+#routes .wrapper .item .title {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  color: #2e3039;
+}
+
+#routes .wrapper .item .title::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 7px;
+  background: #2f607d;
+  height: 35px;
+}
+
+#routes .wrapper .item .route {
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #1a72a7;
+  margin-top: 10px;
+}
+
+#routes .wrapper .item .route .icon_train {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/train.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 8px;
+  margin: 0 9px;
+}
+
+#routes .wrapper .item .highlights {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#routes .heading {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#routes .heading::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background: #000;
+  display: block;
+  transform: translateX(-50%);
+}
+
+#routes .heading h3 {
+  font-size: 27px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  color: #272a3f;
+  margin-bottom: 0;
+}
+
+#routes .heading p {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #666;
+}
+
+/* routes */
+
+.button {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.button.line {
+  background: none;
+  border: 0;
+  color: #000;
+}
