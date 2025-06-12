@@ -212,3 +212,43 @@
   border: 0;
   color: #000;
 }
+
+@media (max-width: 768px) {
+  #cta .inner {
+    padding: 40px 15px;
+  }
+
+  #cta .inner .hero_text {
+    text-align: center;
+  }
+
+  #cta .inner .abs_pos {
+    position: relative;
+    transform: none;
+    width: 100%;
+    right: initial;
+  }
+
+  #cta .inner .arrow {
+    position: relative;
+    top: initial;
+    right: initial;
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+
+  #cta .inner .button_wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #cta .inner .button_wrapper .button {
+    display: inline-block;
+    width: auto;
+  }
+
+  #routes {
+    padding: 10px;
+  }
+}
