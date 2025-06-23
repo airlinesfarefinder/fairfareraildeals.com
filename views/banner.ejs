@@ -1,0 +1,269 @@
+<style>
+  #assist_panel {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  .assist_header {
+    background: #311959;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .assist_banner {
+    height: 225px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .assist_tags {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .assist_tag {
+    display: inline-block;
+    margin-top: -1px;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #30195b;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .assist_cta {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .assist_intro {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .assist_wrapper {
+    padding: 10px;
+  }
+
+  .assist_call_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    background: #161561;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 4px 7px -1px #00000094;
+  }
+
+  .assist_icon {
+    width: 50px;
+    height: 50px;
+    background: url("../img/popup/phone-call.png") center/contain no-repeat;
+    flex-shrink: 0;
+  }
+
+  .assist_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .assist_text h3 {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .assist_text p {
+    font-size: 18px;
+    color: #fff;
+    margin: 5px 0 0 0;
+    font-weight: 700;
+  }
+
+  .pulse_icon {
+    animation: pulse 1s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .assist_subtext {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+
+  .assist_list {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .assist_list li {
+    background: #0a1c2b;
+    border-radius: 12px;
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+  }
+
+  .assist_list li::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* Mobile-specific overrides */
+  @media (max-width: 768px) {
+    #assist_panel {
+      display: block;
+    }
+
+    #quick_dial {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #assist_panel {
+      position: absolute;
+      margin-top: 453px;
+    }
+
+    .sec_why {
+      margin-top: 750px !important;
+    }
+
+    .assist_call_btn {
+      width: auto;
+      margin: auto;
+    }
+
+    .assist_list li {
+      width: calc(50% - 20px);
+      display: block;
+      float: left;
+      margin: 5px;
+    }
+  }
+
+  /* Bottom Fixed Call Bar */
+  #quick_dial {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+  }
+
+  #quick_dial .assist_call_btn {
+    background: #ffffff;
+    box-shadow: -1px -4px 7px -1px #ffffff94;
+    filter: invert(1);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  #quick_dial .assist_text h3,
+  #quick_dial .assist_text p {
+    color: #000;
+  }
+
+  #quick_dial .assist_text h3 span {
+    background: #ffb700;
+    padding: 7px;
+    border: 1px solid #6f301c;
+    border-radius: 7px;
+  }
+</style>
+<div id="assist_panel">
+  <a href="tel:(844) 945-9666"></a>
+  <div class="assist_header">Travel Assist - Rail Bookings</div>
+  <div
+    class="assist_banner"
+    style="background-image: url('images/customer_care.jpg')"
+  ></div>
+  <div class="assist_tags">
+    <div class="assist_tag">Bookings • Changes • Cancellations</div>
+    <div class="assist_tag">
+      Payment Flexibility • Always Available • Refund Help
+    </div>
+  </div>
+  <div class="assist_cta">
+    <span class="assist_intro">
+      Connect Quickly – Talk to a Real Travel Expert, No Waiting
+    </span>
+    <div class="assist_wrapper">
+      <button class="assist_call_btn">
+        <div
+          class="assist_icon"
+          style="background-image: url('images/phone.gif')"
+        ></div>
+        <div class="assist_text">
+          <h3>Support Anytime</h3>
+          <p>(844) 945-9666</p>
+        </div>
+      </button>
+    </div>
+    <p class="assist_subtext">
+      Friendly travel advisors are ready to help you explore and book your next
+      trip.
+    </p>
+  </div>
+  <ul class="assist_list">
+    <li>Curated Vacation Offers</li>
+    <li>Rail Booking Discounts</li>
+    <li>24/7 On Call Assistance</li>
+    <li>Multiple Payment Options, Pay As You Prefer</li>
+    <li>Transparent Pricing</li>
+  </ul>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("assist_panel");
+
+    if (banner) {
+      banner.addEventListener("click", function () {
+        const link = banner.querySelector("a");
+        if (link) {
+          link.click();
+        }
+      });
+    }
+  });
+</script>
