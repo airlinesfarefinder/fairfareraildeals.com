@@ -1,0 +1,289 @@
+<style>
+  .navbar-brand img.logo {
+    width: 113px;
+    top: 23px;
+    position: absolute;
+  }
+
+  #airfare_support_section {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .airfare_header {
+    background: linear-gradient(45deg, #5ebee9, #1e8cae);
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .airfare_banner {
+    height: 225px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f8f8fa;
+  }
+
+  .service_highlight_wrap {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .service_badge {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #022f38;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .intro_content_block {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .support_note {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .contact_inner_box {
+    padding: 10px;
+  }
+
+  .contact_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    background: linear-gradient(to bottom, #53b1d6, #083a4d);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 4px 7px -1px rgba(0, 0, 0, 0.58);
+  }
+
+  .phone_icon_img {
+    width: 50px;
+    height: 50px;
+    background: url("../img/popup/phone-call.png") center/contain no-repeat;
+    flex-shrink: 0;
+  }
+
+  .contact_text_group {
+    position: relative;
+    padding-left: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .contact_text_group h3 {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: inherit;
+  }
+
+  .contact_text_group p {
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0 0 0;
+    font-weight: 700;
+  }
+
+  .pulse_anim {
+    animation: pulseFade 1s infinite alternate;
+  }
+
+  @keyframes pulseFade {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .service_description {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #36454f;
+  }
+
+  .benefit_items {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .benefit_items li {
+    background: #0987b9;
+    border-radius: 12px;
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+  }
+
+  .benefit_items li::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    #airfare_support_section {
+      position: absolute;
+      top: 50px;
+      z-index: 1;
+      background-color: #fff;
+    }
+
+    #mobile_contact_bar {
+      display: block !important;
+    }
+
+    #banner_section {
+      margin-top: 890px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .spacer_section {
+      margin-top: 750px !important;
+    }
+
+    .contact_button {
+      width: auto;
+      margin: auto;
+    }
+
+    .benefit_items li {
+      width: calc(50% - 20px);
+      display: block;
+      float: left;
+      margin: 5px;
+    }
+  }
+
+  #mobile_contact_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    width: 100%;
+  }
+
+  #mobile_contact_bar .contact_button {
+    background: #fff;
+    box-shadow: -1px -4px 7px -1px rgba(0, 0, 0, 0.58);
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  #mobile_contact_bar .contact_text_group h3,
+  #mobile_contact_bar .contact_text_group p {
+    color: #000;
+  }
+
+  #mobile_contact_bar .icon_img {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(217deg);
+  }
+</style>
+
+<div id="airfare_support_section">
+  <a href="tel:(844) 945-9666"></a>
+  <div class="airfare_header">Car Rental Reservations | Assit</div>
+  <div
+    class="airfare_banner"
+    style="background-image: url('images/8602.jpg')"
+  ></div>
+
+  <div class="service_highlight_wrap">
+    <div class="service_badge">Bookings • Changes • Cancellations</div>
+    <div class="service_badge">Flexible Fares • 24/7 Support • Car Info</div>
+  </div>
+
+  <div class="intro_content_block">
+    <span class="support_note">
+      Talk To Car-Rental Experts 24/7 - No Hold Time
+    </span>
+    <div class="contact_inner_box">
+      <button class="contact_button">
+        <div
+          class="phone_icon_img"
+          style="background-image: url('images/phone.gif')"
+        ></div>
+        <div class="contact_text_group" style="padding-left: 0">
+          <h3 style="font-size: 14px">Speak to a Travel Advisor</h3>
+          <p>(844) 945-9666</p>
+        </div>
+      </button>
+    </div>
+    <p class="service_description">
+      Team Of Experts | New Booking <br />
+      Changes | Info Assist
+    </p>
+  </div>
+
+  <ul class="benefit_items">
+    <li>Exclusive Car Rental Discounts</li>
+    <li>24/7 Customer Support</li>
+    <li>Multiple Payment Options</li>
+    <li>Transparent Pricing Guarantee</li>
+  </ul>
+</div>
+
+<div id="mobile_contact_bar">
+  <a href="tel:+1-800-232-8170">
+    <button class="contact_button">
+      <div class="contact_text_group">
+        <div
+          class="icon_img pulse_anim"
+          style="
+            background-image: url('images/animated_phone.gif');
+            background-size: 120%;
+          "
+        ></div>
+        <h3>24/7 Car Rental Assistance</h3>
+        <p>(844) 945-9666</p>
+      </div>
+    </button>
+  </a>
+</div>

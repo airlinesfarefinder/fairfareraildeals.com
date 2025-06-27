@@ -1,0 +1,547 @@
+<style>
+  #banner_section {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 400px;
+    background: #efefef;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #banner_section .title_box {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-top: 50px;
+    padding-left: 15px;
+  }
+
+  #banner_section .title_box h6 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(to right, #00000073, transparent);
+    padding: 8px;
+    color: #fff;
+  }
+
+  #banner_section .title_box h3 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 10px 0;
+    background: linear-gradient(to right, #ffffff73, transparent);
+    padding: 7px;
+  }
+
+  #vehicle_options {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 45px 0;
+  }
+
+  #vehicle_options .vehicle_wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  #vehicle_options .vehicle_wrap .vehicle_card {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 250px;
+    box-shadow: 2px 3px 7px -2px #00000070;
+  }
+
+  #vehicle_options .vehicle_wrap .vehicle_card .vehicle_title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  #vehicle_options .vehicle_wrap .vehicle_card .image_holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #vehicle_options .vehicle_wrap .vehicle_card .action_btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    border: 0;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    font-size: 12px;
+    border-radius: 5px;
+    background: #00328a;
+    color: #fff;
+  }
+
+  #vehicle_options .vehicle_wrap .vehicle_card .price_info {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 0;
+    padding: 10px;
+    background: #673ab7;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #fff;
+  }
+
+  #vehicle_options .btn_container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .section_heading {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .section_heading h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .section_heading p {
+    font-weight: 400;
+    color: #494949;
+    text-transform: capitalize;
+  }
+
+  .section_heading::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: -15px;
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+  }
+
+  .offer_list {
+    margin: 100px 0;
+  }
+
+  .offer_list .vehicle_wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .offer_list .vehicle_wrap .offer_title {
+    font-size: 17px;
+    margin-bottom: 9px;
+    margin-top: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .offer_list .vehicle_card {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px -2px #00000070;
+  }
+
+  .offer_list .vehicle_card .image_holder {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 200px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 12px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .offer_list .vehicle_card p {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #rental_cta {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: #e2dbed;
+    margin-top: 45px;
+    margin-bottom: 75px;
+  }
+
+  #rental_cta .title_box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  #rental_cta .title_box h3 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #2b1f2e;
+  }
+
+  #rental_cta .title_box p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #081b26;
+  }
+
+  #rental_cta .image_holder {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 225px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #rental_cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: #b2a2c4;
+    border-right: 4px solid #8e7b9d;
+  }
+
+  #rental_cta .action_btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px;
+    border-radius: 7px;
+    border: 2px solid #673ab7;
+    background: #43324b;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    font-weight: 500;
+  }
+
+  #rental_about {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  #rental_about ul {
+    margin-top: 25px;
+  }
+
+  #rental_about ul li {
+    margin-top: 10px;
+  }
+
+  #rental_about .image_holder {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #rental_about h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #212747;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+
+  #rental_about p {
+    font-weight: 400;
+    color: #4d4d4d;
+  }
+
+  @media (max-width: 767px) {
+    .offer_list .section_heading {
+      padding: 10px;
+    }
+    .offer_list .vehicle_wrap {
+      padding: 15px;
+    }
+    #vehicle_options .vehicle_wrap .vehicle_card {
+      height: 300px;
+    }
+    #vehicle_options .vehicle_wrap .vehicle_card .image_holder {
+      bottom: 70px;
+    }
+    #rental_cta::before {
+      display: none;
+    }
+    #rental_cta {
+      text-align: center;
+    }
+
+    #rental_about {
+      padding: 20px;
+    }
+  }
+</style>
+
+<div
+  id="banner_section"
+  style="background-image: url('/images/70140531_l-min-scaled.png')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="title_box">
+          <h6>Reserve Your Car Rental Today</h6>
+          <h3>
+            Need a Vehicle? Call Us Now <br /><a href="tel:(844) 945-9666"
+              >(844) 945-9666</a
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('mobile.ejs') %>
+
+<div class="offer_list">
+  <div class="container">
+    <div class="row">
+      <div class="section_heading">
+        <h3>Choose Your Ride</h3>
+        <p>Great vehicles to suit every trip and budget</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="offer_title">Economy Car</div>
+            <div
+              class="image_holder"
+              style="
+                background-image: url('/images/2022-Chevrolet-Spark-front_13232_032_2400x1800_GAZ.avif');
+              "
+            ></div>
+            <p>
+              Easy to drive, fuel-efficient, and ideal for everyday commutes or
+              short getaways.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="offer_title">Midsize SUV</div>
+            <div
+              class="image_holder"
+              style="
+                background-image: url('/images/Night_Eagle_Brilliant_Black_Hi.avif');
+              "
+            ></div>
+            <p>
+              Comfortable and spacious—perfect for families, luggage, or road
+              trips.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="offer_title">Standard SUV</div>
+            <div
+              class="image_holder"
+              style="
+                background-image: url('/images/2022-Chevy-Equinox-RS-Model-Left.avif');
+              "
+            ></div>
+            <p>
+              Versatile, roomy, and ready for all your travel adventures or
+              business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="vehicle_options">
+  <div class="container">
+    <div class="row">
+      <div class="section_heading">
+        <h3>Our Available Rentals</h3>
+        <p>Flexible, affordable, and reliable car hire options</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-lg-3">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="price_info">from $120</div>
+            <div
+              class="image_holder"
+              style="
+                background-image: url('/images/2022-Chevy-Bolt-EUV-LT-Model-Left.avif');
+              "
+            ></div>
+            <div class="btn_container">
+              <div class="vehicle_title">Chevrolet Bolt EUV</div>
+              <a href="tel:(844) 945-9666"
+                ><button class="action_btn">Call Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-lg-3">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="price_info">from $149</div>
+            <div
+              class="image_holder"
+              style="background-image: url('/images/rav4_ogp_02.jpg')"
+            ></div>
+            <div class="btn_container">
+              <div class="vehicle_title">Toyota RAV 4</div>
+              <a href="tel:(844) 945-9666"
+                ><button class="action_btn">Call Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-lg-3">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="price_info">from $129</div>
+            <div
+              class="image_holder"
+              style="
+                background-image: url('/images/2177db33acc84778a62c60a452e1ae59.jpg');
+              "
+            ></div>
+            <div class="btn_container">
+              <div class="vehicle_title">Ford Focus</div>
+              <a href="tel:(844) 945-9666"
+                ><button class="action_btn">Call Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-lg-3">
+        <div class="vehicle_wrap">
+          <div class="vehicle_card">
+            <div class="price_info">from $118</div>
+            <div
+              class="image_holder"
+              style="background-image: url('/images/images.jpg')"
+            ></div>
+            <div class="btn_container">
+              <div class="vehicle_title">Chevrolet Malibu</div>
+              <a href="tel:(844) 945-9666"
+                ><button class="action_btn">Call Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="rental_cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div
+          class="image_holder"
+          style="background-image: url('/images/chevvy_ele.png')"
+        ></div>
+      </div>
+      <div class="col-sm-7">
+        <div class="title_box">
+          <h3>Need a Car Rental?</h3>
+          <p>Call today to book your ride—simple, fast, and hassle-free.</p>
+          <a href="tel:(844) 945-9666"
+            ><button class="action_btn">Call Now</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="rental_about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div
+          class="image_holder"
+          style="background-image: url('/images/compass.png')"
+        ></div>
+      </div>
+      <div class="col-sm-6">
+        <h3>Why Book with Us ?</h3>
+        <p>
+          We make renting a car easy, affordable, and stress-free. Whether it's
+          for work, travel, or day-to-day driving, we've got the right vehicle
+          for you.
+        </p>
+        <ul>
+          <li>✔ Wide variety of cars, from compact to spacious SUVs</li>
+          <li>✔ Great rates with flexible rental options</li>
+          <li>✔ Friendly support to help at every step</li>
+          <li>✔ Easy booking and convenient pickup</li>
+        </ul>
+        <br />
+        <p>Enjoy the freedom to drive—your next car is ready when you are.</p>
+      </div>
+    </div>
+  </div>
+</div>
